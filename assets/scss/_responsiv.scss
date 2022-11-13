@@ -4,6 +4,9 @@
     }
 }
 @media screen and (max-width: 767px) {
+    .row {
+        flex-direction: column;
+    }
     .col-sm-2 {
         flex: 0 0 auto;
         width: 16.66666667%;

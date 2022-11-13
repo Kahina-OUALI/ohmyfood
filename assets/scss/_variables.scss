@@ -3,6 +3,7 @@
 $purple: #9356DC; 
 $pink: #FF79DA;
 $green: #99E2D0;
+$white: #FFFFFF;
 
 $title: 'Shrikhand', cursive;
 $text: 'Roboto', sans-serif;
@@ -17,6 +18,9 @@ $text: 'Roboto', sans-serif;
 .row {
     width: 100%;
     display: flex;
+    @media screen and (max-width: 480px) {
+        flex-direction: column;
+    }
 }
 .container {
     max-width: 1980px;
@@ -25,5 +29,16 @@ body {
     background-color: #EAEAEA;
 }
 img {
+    width: 100%;
     object-fit: cover;
+}
+h2, 
+h3 {
+    font-size: 22px;
+    font-weight: 800;
+    font-family: $text;
+}
+.shad {
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px #bebebe;
 }
