@@ -4,16 +4,6 @@
   box-sizing: border-box;
 }
 
-.row {
-  width: 100%;
-  display: flex;
-}
-@media screen and (max-width: 480px) {
-  .row {
-    flex-direction: column;
-  }
-}
-
 .container {
   max-width: 1980px;
 }
@@ -31,6 +21,10 @@ h2,
 h3 {
   font-size: 22px;
   font-weight: 800;
+  font-family: "Roboto", sans-serif;
+}
+
+p {
   font-family: "Roboto", sans-serif;
 }
 
@@ -142,13 +136,14 @@ h3 {
   }
 }
 .header {
+  padding: 20px 0 20px 0;
   background-color: #FFFFFF;
 }
 .header .logo {
   text-align: center;
 }
 .header .logo img {
-  width: 80px;
+  width: 30%;
 }
 @media screen and (max-width: 480px) {
   .header {
@@ -162,193 +157,198 @@ h3 {
   .header {
     padding: 30px;
   }
-  .header .logo img {
-    width: 30%;
-  }
 }
 
 .footer {
   background-color: #353535;
+  padding: 20px;
 }
-.footer .logo-footer {
-  width: 50px;
+.footer h6 {
+  font-size: 28px;
+  color: #FFFFFF;
+  font-weight: 300;
+  margin-bottom: 20px;
+  font-family: "Shrikhand", cursive;
 }
 @media screen and (max-width: 767px) {
-  .footer {
-    padding: 20px;
-  }
   .footer h6 {
     font-size: 18px;
-    color: #FFFFFF;
-    font-weight: 300;
-    margin-bottom: 20px;
-    font-family: "Shrikhand", cursive;
-  }
-  .footer .links {
-    display: flex;
-    flex-direction: column;
-  }
-  .footer .links a {
-    font-size: 13px;
-    color: #FFFFFF;
-    margin-bottom: 5px;
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-  }
-  .footer .links a i {
-    margin-right: 5px;
   }
 }
+.footer .links {
+  display: flex;
+  flex-direction: column;
+}
+.footer .links a {
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+.footer .links a i {
+  margin-right: 5px;
+}
 
+.int .txt {
+  font-size: 25px;
+  text-align: center;
+  padding: 30px 0 30px 0;
+}
 @media screen and (max-width: 767px) {
   .int .txt {
     font-size: 15px;
-    text-align: center;
     padding: 20px 0 20px 0;
     font-family: "Roboto", sans-serif;
   }
 }
 
 .reserv {
+  padding: 30px;
   background-color: #F7F7F7;
 }
-@media screen and (max-width: 767px) {
-  .reserv {
-    padding: 30px;
-  }
-  .reserv h1,
+.reserv .row {
+  flex-direction: column;
+}
+.reserv h1,
 .reserv p {
-    text-align: center;
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 20px;
-  }
-  .reserv .btn {
-    text-align: center;
-  }
-  .reserv .btn button {
-    border: none;
-    padding: 15px;
-    font-size: 15px;
-    color: #FFFFFF;
-    border-radius: 50px;
-    font-family: "Roboto", sans-serif;
-    background: linear-gradient(#FF79DA, #9356DC);
-  }
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+.reserv .btn {
+  text-align: center;
+}
+.reserv .btn button {
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  color: #FFFFFF;
+  border-radius: 50px;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(#FF79DA, #9356DC);
 }
 
 .fonct {
+  padding: 50px;
   background-color: #FFFFFF;
+}
+.fonct .row {
+  flex-direction: column;
+}
+.fonct .btn-1,
+.fonct .btn-2,
+.fonct .btn-3 {
+  display: flex;
+  margin-bottom: 30px;
+}
+.fonct .btn-1 .number,
+.fonct .btn-2 .number,
+.fonct .btn-3 .number {
+  padding: 5px;
+  position: absolute;
+  border-radius: 50%;
+  background: #9356DC;
+  margin: 25px 0px 25px -11px;
+}
+.fonct .btn-1 .number span,
+.fonct .btn-2 .number span,
+.fonct .btn-3 .number span {
+  padding: 5px;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+}
+.fonct .btn-1 button,
+.fonct .btn-2 button,
+.fonct .btn-3 button {
+  width: 100%;
+  border: none;
+  padding: 30px;
+  display: flex;
+  font-size: 15px;
+  border-radius: 20px;
+  font-family: "Roboto", sans-serif;
+  background-color: #F7F7F7;
+}
+.fonct .btn-1 button i,
+.fonct .btn-2 button i,
+.fonct .btn-3 button i {
+  color: grey;
+  font-size: 20px;
+  margin-right: 15px;
+}
+.fonct .btn-1 button .icon,
+.fonct .btn-2 button .icon,
+.fonct .btn-3 button .icon {
+  margin-left: 15px;
+}
+.fonct .btn-1 button .p-t,
+.fonct .btn-2 button .p-t,
+.fonct .btn-3 button .p-t {
+  font-weight: 600;
+  text-align: center;
+}
+.fonct h2 {
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
   .fonct {
     padding: 50px 20px 50px 20px;
-  }
-  .fonct h2 {
-    margin-bottom: 30px;
-  }
-  .fonct .btn-1,
-.fonct .btn-2,
-.fonct .btn-3 {
-    display: flex;
-    margin-bottom: 30px;
-  }
-  .fonct .btn-1 .number,
-.fonct .btn-2 .number,
-.fonct .btn-3 .number {
-    padding: 5px;
-    position: absolute;
-    border-radius: 50%;
-    background: #9356DC;
-    margin: 25px 0px 25px -11px;
-  }
-  .fonct .btn-1 .number span,
-.fonct .btn-2 .number span,
-.fonct .btn-3 .number span {
-    padding: 5px;
-    color: #FFFFFF;
-    font-family: "Roboto", sans-serif;
-  }
-  .fonct .btn-1 button,
-.fonct .btn-2 button,
-.fonct .btn-3 button {
-    width: 100%;
-    border: none;
-    padding: 30px;
-    display: flex;
-    font-size: 15px;
-    border-radius: 20px;
-    font-family: "Roboto", sans-serif;
-    background-color: #F7F7F7;
-  }
-  .fonct .btn-1 button i,
-.fonct .btn-2 button i,
-.fonct .btn-3 button i {
-    color: grey;
-    font-size: 20px;
-    margin-right: 15px;
-  }
-  .fonct .btn-1 button .icon,
-.fonct .btn-2 button .icon,
-.fonct .btn-3 button .icon {
-    margin-left: 15px;
-  }
-  .fonct .btn-1 button .p-t,
-.fonct .btn-2 button .p-t,
-.fonct .btn-3 button .p-t {
-    font-weight: 600;
-    text-align: center;
   }
 }
 
 .restau {
   padding: 30px 20px 30px 20px;
 }
-@media screen and (max-width: 767px) {
-  .restau .cards-list {
-    margin: 30px 0px 30px 0px;
-  }
-  .restau .card {
-    margin-bottom: 20px;
-    position: relative;
-    flex-direction: column;
-    background-color: #FFFFFF;
-  }
+.restau .cards-list {
+  margin: 30px 0px 30px 0px;
+}
+.restau .card {
+  margin-bottom: 20px;
+  position: relative;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+.restau .card img {
+  height: 300px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+@media screen and (max-width: 480px) {
   .restau .card img {
-    height: 184px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    height: 210px;
   }
-  .restau .card .new {
-    padding: 6px;
-    position: absolute;
-    background-color: #99E2D0;
-  }
-  .restau .card .new p {
-    font-weight: 800;
-    font-family: "Roboto", sans-serif;
-  }
-  .restau .card .card-body {
-    padding: 15px 20px 25px 20px;
-  }
-  .restau .card .card-body h5 {
-    font-size: 17px;
-    font-weight: 600;
-    font-family: "Roboto", sans-serif;
-  }
-  .restau .card .card-body p {
-    font-weight: 300;
-    font-family: "Roboto", sans-serif;
-  }
-  .restau .card .card-body .favoris {
-    text-align: end;
-    margin-top: -4%;
-  }
-  .restau .card .card-body .favoris .ic i {
-    font-size: 25px;
-  }
-  .restau .card .card-body .favoris .ic i:active {
-    color: #9356DC;
-  }
+}
+.restau .card .new {
+  padding: 6px;
+  position: absolute;
+  background-color: #99E2D0;
+}
+.restau .card .new p {
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+}
+.restau .card .card-body {
+  padding: 15px 20px 25px 20px;
+}
+.restau .card .card-body h5 {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.restau .card .card-body p {
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+.restau .card .card-body .favoris {
+  text-align: end;
+  margin-top: -2%;
+}
+.restau .card .card-body .favoris .ic i {
+  font-size: 25px;
+}
+.restau .card .card-body .favoris .ic i:active {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

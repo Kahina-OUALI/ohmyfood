@@ -1,9 +1,10 @@
 .header {
+    padding: 20px 0 20px 0;
     background-color: #FFFFFF;
     .logo {
         text-align: center;
         img {
-            width: 80px;
+            width: 30%;
         }
     }
     @media screen and (max-width: 480px) {
@@ -16,32 +17,26 @@
     }
     @media screen and (max-width: 767px) {
         padding: 30px;
-        .logo {
-            img {
-                width: 30%;
-            }
-        }
     }
 }
 .footer {
     background-color: #353535;
-    .logo-footer {
-        width: 50px;
-    }
-    @media screen and (max-width: 767px) {
-        padding: 20px;
+    padding: 20px;
         h6 {
-            font-size: 18px;
+            font-size: 28px;
             color: #FFFFFF;
             font-weight: 300;
             margin-bottom: 20px;
             font-family: $title;
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+            }
         }
         .links {
             display: flex;
             flex-direction: column;
             a {
-                font-size: 13px;
+                font-size: 16px;
                 color: #FFFFFF;
                 margin-bottom: 5px;
                 text-decoration: none;
@@ -51,5 +46,4 @@
                 }
             }
         }
-    }
 }
