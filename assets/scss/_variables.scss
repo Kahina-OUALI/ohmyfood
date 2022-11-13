@@ -1,5 +1,29 @@
-// Charte graphique 
+// Graphic Charter
 
 $purple: #9356DC; 
 $pink: #FF79DA;
 $green: #99E2D0;
+
+$title: 'Shrikhand', cursive;
+$text: 'Roboto', sans-serif;
+
+// Générales
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row {
+    width: 100%;
+    display: flex;
+}
+.container {
+    max-width: 1980px;
+}
+body {
+    background-color: #EAEAEA;
+}
+img {
+    object-fit: cover;
+}

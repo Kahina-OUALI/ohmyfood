@@ -1,0 +1,47 @@
+.header {
+    background-color: #FFFFFF;
+    .logo {
+        text-align: center;
+        img {
+            width: 80px;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        padding: 18px 0 18px 0;
+        .logo {
+            .img-logo {
+                width: 35%;
+            }
+        }
+    }
+}
+.footer {
+    background-color: #353535;
+    .logo-footer {
+        width: 50px;
+    }
+    @media screen and (max-width: 480px) {
+        padding: 20px;
+        h6 {
+            font-size: 18px;
+            color: #FFFFFF;
+            font-weight: 300;
+            margin-bottom: 20px;
+            font-family: $title;
+        }
+        .links {
+            display: flex;
+            flex-direction: column;
+            a {
+                font-size: 13px;
+                color: #FFFFFF;
+                margin-bottom: 5px;
+                text-decoration: none;
+                font-family: $text;
+                i {
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}

@@ -1,3 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.row {
+  width: 100%;
+  display: flex;
+}
+
+.container {
+  max-width: 1980px;
+}
+
+body {
+  background-color: #EAEAEA;
+}
+
+img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 480px) {
+  #container {
+    max-width: 480px !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .col-sm-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-sm-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-sm-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-sm-12 {
+    flex: 0 0 auto;
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 992px) {
+  .col-lg-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-lg-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-lg-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-lg-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 16.66666667%;
+  }
+
+  .col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-md-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .col-md-8 {
+    flex: 0 0 auto;
+    width: 66.66666667%;
+  }
+
+  .col-md-12 {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+.header {
+  background-color: #FFFFFF;
+}
+.header .logo {
+  text-align: center;
+}
+.header .logo img {
+  width: 80px;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    padding: 18px 0 18px 0;
+  }
+  .header .logo .img-logo {
+    width: 35%;
+  }
+}
+
+.footer {
+  background-color: #353535;
+}
+.footer .logo-footer {
+  width: 50px;
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 20px;
+  }
+  .footer h6 {
+    font-size: 18px;
+    color: #FFFFFF;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-family: "Shrikhand", cursive;
+  }
+  .footer .links {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer .links a {
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  }
+  .footer .links a i {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ind .txt {
+    font-size: 15px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    font-family: "Roboto", sans-serif;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
