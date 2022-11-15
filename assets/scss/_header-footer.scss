@@ -4,19 +4,28 @@
     .logo {
         text-align: center;
         img {
-            width: 30%;
-        }
-    }
-    @media screen and (max-width: 480px) {
-        padding: 18px 0 18px 0;
-        .logo {
-            .img-logo {
-                width: 35% !important;
+            width: 20%;
+            @media screen and (max-width: 480px) {
+                width: 50% !important;
+            }
+            @media screen and (max-width: 1024px) {
+                width: 35%;
             }
         }
-    }
-    @media screen and (max-width: 767px) {
-        padding: 30px;
+        .home {
+            position: absolute;
+            margin: 10px 0px 0px -70px;
+            .return {
+                font-size: 30px;
+                color: black;
+            }
+            @media screen and (max-width: 480px) {
+                margin: 2px 0px 0px -70px !important;
+            }
+            @media screen and (max-width: 767px) {
+                margin: 5px 0px 0px -70px;
+            }
+        }
     }
 }
 .footer {

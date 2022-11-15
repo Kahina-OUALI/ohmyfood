@@ -1,6 +1,6 @@
 // Graphic Charter
 
-$purple: #9356DC; 
+$purple: #9356DC;
 $pink: #FF79DA;
 $green: #99E2D0;
 $white: #FFFFFF;
@@ -15,26 +15,156 @@ $text: 'Roboto', sans-serif;
     padding: 0;
     box-sizing: border-box;
 }
+
 .container {
     max-width: 1980px;
 }
-body {
+
+.int,
+.restau {
     background-color: #EAEAEA;
 }
+
 img {
-    width: 100%;
     object-fit: cover;
 }
-h2, 
-h3 {
-    font-size: 22px;
-    font-weight: 800;
+
+.h-title {
+    font-size: 32px;
+    font-weight: 600;
+    font-family: $title;
+
+    @media screen and (max-width: 767px) {
+        font-size: 22px;
+    }
+}
+
+.m-title {
+    width: 53px;
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 2px;
+    margin: 20px 0 20px 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid $green;
     font-family: $text;
 }
+
+h2,
+h3 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: $text;
+}
+
 p {
     font-family: $text;
 }
+
 .shad {
     border-radius: 20px;
     box-shadow: 0px 0px 16px #bebebe;
+}
+
+.btn-princ {
+    text-align: center;
+
+    button {
+        border: none;
+        padding: 15px;
+        font-size: 15px;
+        color: $white;
+        border-radius: 50px;
+        font-family: $text;
+        background: linear-gradient($pink, $purple);
+    }
+}
+
+.btn-menu {
+    width: 100%;
+    border: none;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    font-family: $text;
+
+    @media screen and (max-width: 767px) {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .tit-c {
+        text-align: left;
+
+        .ent-title {
+            font-size: 18px;
+            font-weight: 800;
+            font-family: $text;
+        }
+    }
+
+    .txt {
+        display: flex;
+
+        p {
+            font-size: 18px;
+            font-weight: 300;
+            font-family: $text;
+        }
+    }
+    .valid-btn {
+        right: 0;
+        position: absolute;
+        .price {
+            font-size: 18px;
+            font-weight: 800;
+            font-family: $text;
+            @media screen and (max-width: 767px) {
+                margin-right: 10px;
+            }
+        }
+        .valid {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background-color: $green;
+            @media screen and (max-width: 767px) {
+                margin-right: -18px;
+                padding: 30px 30px 18px 30px;
+            }
+            i {
+                color: #FFFFFF;
+                font-size: 20px;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            right: 34px;
+            margin-top: -28px;
+        }
+    }
+}
+
+.favoris {
+    position: absolute;
+    right: 0;
+
+    .ic,
+    .heart {
+        i {
+            font-size: 25px;
+            background: linear-gradient($purple, $pink);
+
+            &:active,
+            &:focus,
+            &:hover {
+                color: $purple;
+                transition: background 4s;
+                background: linear-gradient($purple, $pink);
+            }
+        }
+    }
+}
+
+.favoris-ind {
+    margin-top: -40px;
+    margin-right: 20px;
 }
