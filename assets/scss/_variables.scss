@@ -30,6 +30,7 @@ img {
 }
 
 .h-title {
+    color: black;
     font-size: 32px;
     font-weight: 600;
     font-family: $title;
@@ -41,6 +42,7 @@ img {
 
 .m-title {
     width: 53px;
+    color: black;
     font-size: 18px;
     font-weight: 400;
     padding-bottom: 2px;
@@ -52,12 +54,14 @@ img {
 
 h2,
 h3 {
+    color: black;
     font-size: 22px;
     font-weight: 600;
     font-family: $text;
 }
 
 p {
+    color: black;
     font-family: $text;
 }
 
@@ -83,15 +87,11 @@ p {
 .btn-menu {
     width: 100%;
     border: none;
-    padding: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 20px;
     background-color: #FFFFFF;
     font-family: $text;
-
-    @media screen and (max-width: 767px) {
-        padding: 10px;
-        margin-bottom: 10px;
-    }
 
     .tit-c {
         text-align: left;
@@ -110,35 +110,56 @@ p {
             font-size: 18px;
             font-weight: 300;
             font-family: $text;
+            @media screen and (max-width: 767px) {
+                font-size: 15px;
+            }
         }
     }
+
     .valid-btn {
         right: 0;
+        right: 50px;
+        margin-top: -30px;
         position: absolute;
+
         .price {
             font-size: 18px;
             font-weight: 800;
             font-family: $text;
+
             @media screen and (max-width: 767px) {
                 margin-right: 10px;
             }
         }
+
         .valid {
+            margin-left: 17px;
+            margin-right: -21px;
+            padding: 30px 30px 22px 30px;
             border-top-right-radius: 20px;
             border-bottom-right-radius: 20px;
             background-color: $green;
+
             @media screen and (max-width: 767px) {
-                margin-right: -18px;
-                padding: 30px 30px 18px 30px;
+                margin-left: 0px !important;
+                margin-right: -18px !important;
+                padding: 30px 30px 18px 30px !important;
             }
+
             i {
                 color: #FFFFFF;
                 font-size: 20px;
             }
         }
+
         @media screen and (max-width: 767px) {
-            right: 34px;
-            margin-top: -28px;
+            right: 34px !important;
+            margin-top: -28px !important;
+        }
+
+        @media screen and (max-width: 1024px) {
+            right: 50px;
+            margin-top: -30px;
         }
     }
 }
