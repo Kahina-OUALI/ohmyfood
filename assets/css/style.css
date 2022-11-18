@@ -590,4 +590,67 @@ p {
   margin-bottom: 50px;
 }
 
+.loader {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.loader .dot {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 50%;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: wave-loader, wave-color;
+  animation-timing-function: ease-in-out, linear;
+}
+.loader .dot .dot-1 {
+  animation-delay: 0.1s;
+}
+.loader .dot .dot-2 {
+  animation-delay: 0.3s;
+}
+.loader .dot .dot-3 {
+  animation-delay: 0.6s;
+}
+.loader .dot .dot-4 {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave-loader {
+  0%, 100% {
+    transform: translateY(-30px);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(0);
+  }
+}
+@keyframes wave-color {
+  0%, 100% {
+    background: #3f2064;
+  }
+  25% {
+    background: #d85bb5;
+  }
+  50% {
+    background: #000000;
+  }
+  75% {
+    background: #95e9d4;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
