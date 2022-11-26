@@ -160,20 +160,24 @@ p {
 }
 
 .favoris {
-  position: absolute;
   right: 0;
+  position: absolute;
 }
-.favoris .ic i,
-.favoris .heart i {
+.favoris .ic,
+.favoris .ic-heart,
+.favoris .heart {
   font-size: 25px;
 }
-.favoris .ic i:active, .favoris .ic i:focus, .favoris .ic i:hover,
-.favoris .heart i:active,
-.favoris .heart i:focus,
-.favoris .heart i:hover {
+.favoris .ic-heart {
+  display: none;
+}
+.favoris:hover .ic, .favoris:focus .ic, .favoris:active .ic {
+  display: none;
+}
+.favoris:hover .ic-heart, .favoris:focus .ic-heart, .favoris:active .ic-heart {
+  display: block;
   color: #9356DC;
   transition: background 4s;
-  color: linear-gradient(#9356DC, #FF79DA);
 }
 
 .favoris-ind {
@@ -605,83 +609,6 @@ p {
 .commandes button {
   width: 200px;
   margin-bottom: 50px;
-}
-
-.loader {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1000;
-  display: flex;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-  animation-duration: 2.5s;
-  animation-name: fade-loader;
-  animation-fill-mode: forwards;
-  background: linear-gradient(#FF79DA, #9356DC);
-}
-.loader .dot {
-  width: 60px;
-  height: 60px;
-  margin-right: 15px;
-  border-radius: 50%;
-  animation-duration: 2.5s;
-  animation-iteration-count: infinite;
-  animation-name: wave-loader, wave-color;
-  animation-timing-function: ease-in-out, linear;
-}
-.loader .dot .dot-1 {
-  animation-delay: 0.1s;
-}
-.loader .dot .dot-2 {
-  animation-delay: 0.3s;
-}
-.loader .dot .dot-3 {
-  animation-delay: 0.6s;
-}
-.loader .dot .dot-4 {
-  animation-delay: 0.9s;
-}
-
-@keyframes wave-loader {
-  0%, 100% {
-    transform: translateY(-30px);
-  }
-  25% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  75% {
-    transform: translateY(0);
-  }
-}
-@keyframes wave-color {
-  0%, 100% {
-    background: #3f2064;
-  }
-  25% {
-    background: #d85bb5;
-  }
-  50% {
-    background: #000000;
-  }
-  75% {
-    background: #95e9d4;
-  }
-}
-@keyframes fade-loader {
-  0%, 50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    z-index: -1;
-    visibility: hidden;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -182,26 +182,32 @@ p {
     }
 }
 
-
 .favoris {
-    position: absolute;
     right: 0;
+    position: absolute;
 
     .ic,
+    .ic-heart,
     .heart {
-        i {
-            font-size: 25px;
-
-            &:active,
-            &:focus,
-            &:hover {
-                color: $purple;
-                transition: background 4s;
-                color: linear-gradient($purple, $pink);
-            }
+        font-size: 25px;
+    }
+    .ic-heart {
+        display: none;
+    }
+    &:hover,
+    &:focus,
+    &:active {
+        .ic {
+            display: none;
+        }
+        .ic-heart {
+            display: block;
+            color: $purple;
+            transition: background 4s;
         }
     }
 }
+
 
 .favoris-ind {
     margin-top: -40px;
