@@ -1,0 +1,56 @@
+// Animation for the valid button
+
+@keyframes valid-icon {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+// Animation for the dots & loader
+
+@keyframes wave-loader {
+    0%,
+    100% {
+      transform: translateY(-30px);
+    }
+    25% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    75% {
+      transform: translateY(0);
+    }
+}
+
+@keyframes wave-color {
+    0%,
+    100% {
+      background: $dot-1;
+    }
+    25% {
+      background: $dot-2;
+    }
+    50% {
+      background: $dot-3;
+    }
+    75% {
+      background: $dot-4;
+    }
+}
+
+@keyframes fade-loader {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+}

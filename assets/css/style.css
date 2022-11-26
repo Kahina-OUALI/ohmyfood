@@ -115,48 +115,26 @@ p {
   font-weight: 800;
   font-family: "Roboto", sans-serif;
 }
-@media screen and (max-width: 767px) {
-  .btn-menu .valid-btn .price {
-    margin-right: 10px;
-  }
-}
 .btn-menu .valid-btn .valid {
-  display: none;
   margin-left: 17px;
   margin-right: -21px;
-  padding: 25px 30px 25px 30px;
+  padding: 26px 20px 23px 20px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #99E2D0;
-}
-@media screen and (max-width: 767px) {
-  .btn-menu .valid-btn .valid {
-    margin: -40px -18px 0 12px !important;
-    padding: 22px 30px 20px 30px !important;
-  }
 }
 .btn-menu .valid-btn .valid i {
   color: #FFFFFF;
   font-size: 20px;
 }
 @media screen and (max-width: 767px) {
-  .btn-menu .valid-btn {
-    right: 34px !important;
-    margin-top: 8px !important;
+  .btn-menu .valid-btn .valid {
+    margin-right: -30px;
+    padding: 26px 20px 20px 20px;
   }
 }
-@media screen and (max-width: 1024px) {
-  .btn-menu .valid-btn {
-    right: 50px;
-    margin-top: -30px;
-  }
-}
-.btn-menu:focus .price {
-  margin-left: -90px;
-}
-.btn-menu:focus .valid {
-  display: block;
-  transition: 4s;
+.btn-menu .valid-btn:focus .valid {
+  transition: background 4s;
 }
 
 .favoris {
@@ -609,6 +587,91 @@ p {
 .commandes button {
   width: 200px;
   margin-bottom: 50px;
+}
+
+.loader {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  animation-duration: 2.5s;
+  animation-name: fade-loader;
+  animation-fill-mode: forwards;
+  background: linear-gradient(#FF79DA, #9356DC);
+}
+.loader .dot {
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+  border-radius: 50%;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-name: wave-loader, wave-color;
+  animation-timing-function: ease-in-out, linear;
+}
+.loader .dot .dot-1 {
+  animation-delay: 0.1s;
+}
+.loader .dot .dot-2 {
+  animation-delay: 0.3s;
+}
+.loader .dot .dot-3 {
+  animation-delay: 0.6s;
+}
+.loader .dot .dot-4 {
+  animation-delay: 0.9s;
+}
+
+@keyframes valid-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes wave-loader {
+  0%, 100% {
+    transform: translateY(-30px);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(0);
+  }
+}
+@keyframes wave-color {
+  0%, 100% {
+    background: #3f2064;
+  }
+  25% {
+    background: #d85bb5;
+  }
+  50% {
+    background: #000000;
+  }
+  75% {
+    background: #95e9d4;
+  }
+}
+@keyframes fade-loader {
+  0%, 50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
