@@ -115,6 +115,11 @@ p {
   font-weight: 800;
   font-family: "Roboto", sans-serif;
 }
+@media screen and (max-width: 767px) {
+  .btn-menu .valid-btn .price {
+    margin-right: -10px;
+  }
+}
 .btn-menu .valid-btn .valid {
   margin-left: 17px;
   margin-right: -21px;
@@ -133,8 +138,8 @@ p {
     padding: 26px 20px 20px 20px;
   }
 }
-.btn-menu .valid-btn:focus .valid {
-  transition: background 4s;
+.btn-menu .valid-btn:hover .valid {
+  display: block !important;
 }
 
 .favoris {
