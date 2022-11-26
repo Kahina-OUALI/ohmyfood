@@ -177,6 +177,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    h1 {
+        color: rgba(0, 0, 0, 0);
+    }
     @media screen and (max-width: 480px) {
         height: 33vh !important;
     }
@@ -220,6 +223,9 @@
     }
 }
 .commandes {
+    h6 {
+        display: none;
+    }
     button {
         width: 200px;
         margin-bottom: 50px;

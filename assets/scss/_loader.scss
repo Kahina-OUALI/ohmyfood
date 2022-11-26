@@ -3,17 +3,21 @@
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 1000;
     display: flex;
     position: fixed;
     align-items: center;
     justify-content: center;
+    animation-duration: 2.5s;
+    animation-name: fade-loader;
+    animation-fill-mode: forwards;
     background: linear-gradient($pink, $purple);
     .dot {
         width: 60px;
         height: 60px;
         margin-right: 15px;
         border-radius: 50%;
-        animation-duration: 3s;
+        animation-duration: 2.5s;
         animation-iteration-count: infinite;
         animation-name: wave-loader, wave-color;
         animation-timing-function: ease-in-out, linear;
@@ -64,4 +68,16 @@
     75% {
       background: $dot-4;
     }
+}
+
+@keyframes fade-loader {
+  0%,
+  50% {
+    opacity: 1;
   }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+}
