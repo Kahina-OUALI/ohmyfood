@@ -1,7 +1,18 @@
-@import "variables.scss";
+// Layout 
 
-@import "responsiv.scss";
-@import "header-footer.scss";
-@import "layout.scss";
-@import "loader.scss";
-@import "animations.scss";
+@import "layout/header.scss";
+@import "layout/footer.scss";
+@import "layout/responsiv.scss";
+
+// Pages 
+
+@import "pages/home.scss";
+@import "pages/menus.scss";
+
+
+// Utils
+
+@import "utils/loader.scss";
+@import "utils/variables.scss";
+@import "utils/extensions.scss";
+@import "utils/animations.scss";

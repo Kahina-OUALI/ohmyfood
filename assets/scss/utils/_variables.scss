@@ -1,0 +1,40 @@
+// Graphic Charter
+
+$purple: #9356DC;
+$pink: #FF79DA;
+$green: #99E2D0;
+$white: #FFFFFF;
+
+$title: 'Shrikhand', cursive;
+$text: 'Roboto', sans-serif;
+
+// Color for the loader
+
+$dot-1: #3f2064;
+$dot-2: #d85bb5;
+$dot-3: #000000;
+$dot-4: #95e9d4;
+
+// Générales
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1980px;
+}
+img {
+    object-fit: cover;
+}
+.shad {
+    border-radius: 20px;
+    box-shadow: 0px 0px 16px #bebebe;
+}
+.btn-menu {
+    @extend %btn-menu;
+}
+.favoris {
+    @extend %favoris;
+}

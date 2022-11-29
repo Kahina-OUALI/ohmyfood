@@ -1,0 +1,39 @@
+@import "../utils/variables.scss";
+
+.footer {
+    background-color: #353535;
+    padding: 20px;
+
+    h6 {
+        font-size: 28px;
+        color: #FFFFFF;
+        font-weight: 300;
+        margin-bottom: 20px;
+        font-family: $title;
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            font-size: 16px;
+            color: #FFFFFF;
+            margin-bottom: 5px;
+            text-decoration: none;
+            font-family: $text;
+
+            i {
+                margin-right: 5px;
+            }
+
+            .fa-utensils {
+                margin-right: 10px;
+            }
+        }
+    }
+}
