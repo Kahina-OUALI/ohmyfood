@@ -65,14 +65,15 @@ img {
   margin-bottom: 10px;
   border-radius: 20px;
   flex-direction: column;
-  background-color: #FFFFFF;
+  color: black !important;
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
 .btn-menu .tit-c {
   font-size: 18px;
-  color: black;
   font-weight: 800;
   text-align: left;
+  color: black !important;
   font-family: "Roboto", sans-serif;
 }
 .btn-menu .txt {
@@ -81,6 +82,7 @@ img {
 .btn-menu .txt .text {
   font-size: 18px;
   font-weight: 300;
+  color: black !important;
   font-family: "Roboto", sans-serif;
 }
 @media screen and (max-width: 767px) {
@@ -92,16 +94,96 @@ img {
   right: 30px;
   margin-top: 11px;
   position: absolute;
+  transition: all 0.3s ease-out;
+}
+.btn-menu .valid-btn .valid {
+  display: none;
+}
+.btn-menu .valid-btn .valid .fa-circle-check {
+  font-size: 22px;
+  color: #ffffff;
 }
 .btn-menu .valid-btn .price {
   font-size: 18px;
   font-weight: 800;
+  margin-right: 10px;
   font-family: "Roboto", sans-serif;
 }
+.btn-menu:focus .price, .btn-menu:active .price {
+  margin-right: 45px;
+}
+.btn-menu:focus .valid, .btn-menu:active .valid {
+  top: -44px;
+  width: 50px;
+  right: -38px;
+  display: block;
+  position: relative;
+  padding: 25px 5px 19px 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #99e2d0;
+}
 @media screen and (max-width: 767px) {
-  .btn-menu .valid-btn .price {
-    margin-right: -10px;
+  .btn-menu:focus .valid, .btn-menu:active .valid {
+    padding: 25px 5px 15px 5px;
   }
+}
+.btn-menu:focus .valid .fa-circle-check, .btn-menu:active .valid .fa-circle-check {
+  animation: rotateIcon 2s;
+}
+
+.btn-one,
+.btn-two,
+.btn-three,
+.btn-four,
+.btn-five,
+.btn-six,
+.btn-seven,
+.btn-eight,
+.btn-nine,
+.btn-ten {
+  animation-name: moveLeft;
+  animation-duration: 2s;
+}
+
+.btn-one {
+  animation-delay: 2s;
+}
+
+.btn-two {
+  animation-delay: 3s;
+}
+
+.btn-three {
+  animation-delay: 4s;
+}
+
+.btn-four {
+  animation-delay: 5s;
+}
+
+.btn-five {
+  animation-delay: 6s;
+}
+
+.btn-six {
+  animation-delay: 7s;
+}
+
+.btn-seven {
+  animation-delay: 8s;
+}
+
+.btn-eight {
+  animation-delay: 9s;
+}
+
+.btn-nine {
+  animation-delay: 10s;
+}
+
+.btn-ten {
+  animation-delay: 11s;
 }
 
 .footer {
@@ -269,7 +351,7 @@ img {
 
 .fonct {
   padding: 50px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .fonct .row {
   flex-direction: column;
@@ -286,14 +368,14 @@ img {
   padding: 5px;
   position: absolute;
   border-radius: 50%;
-  background: #9356DC;
+  background: #9356dc;
   margin: 25px 0px 25px -11px;
 }
 .fonct .btn-1 .number span,
 .fonct .btn-2 .number span,
 .fonct .btn-3 .number span {
   padding: 5px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
 .fonct .btn-1 button,
@@ -343,7 +425,7 @@ img {
 .fonct .btn-3 button:hover i,
 .fonct .btn-3 button:focus i,
 .fonct .btn-3 button:active i {
-  color: #9356DC;
+  color: #9356dc;
 }
 .fonct h2 {
   color: black;
@@ -370,7 +452,7 @@ img {
   margin-bottom: 20px;
   position: relative;
   flex-direction: column;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 .restau .cards-list a .card img {
   height: 300px;
@@ -388,7 +470,7 @@ img {
   padding: 6px;
   position: absolute;
   margin: 2% 1% 0% 0%;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
 }
 .restau .cards-list a .card .new p {
   color: #6cad9d;
@@ -434,7 +516,7 @@ p {
 }
 
 .present {
-  height: 68vh;
+  height: 95vh;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -516,7 +598,7 @@ p {
   animation-duration: 2.5s;
   animation-name: fade-loader;
   animation-fill-mode: forwards;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
 }
 .loader .dot {
   width: 60px;
@@ -569,14 +651,15 @@ img {
   margin-bottom: 10px;
   border-radius: 20px;
   flex-direction: column;
-  background-color: #FFFFFF;
+  color: black !important;
+  background-color: #ffffff;
   font-family: "Roboto", sans-serif;
 }
 .btn-menu .tit-c {
   font-size: 18px;
-  color: black;
   font-weight: 800;
   text-align: left;
+  color: black !important;
   font-family: "Roboto", sans-serif;
 }
 .btn-menu .txt {
@@ -585,6 +668,7 @@ img {
 .btn-menu .txt .text {
   font-size: 18px;
   font-weight: 300;
+  color: black !important;
   font-family: "Roboto", sans-serif;
 }
 @media screen and (max-width: 767px) {
@@ -596,16 +680,96 @@ img {
   right: 30px;
   margin-top: 11px;
   position: absolute;
+  transition: all 0.3s ease-out;
+}
+.btn-menu .valid-btn .valid {
+  display: none;
+}
+.btn-menu .valid-btn .valid .fa-circle-check {
+  font-size: 22px;
+  color: #ffffff;
 }
 .btn-menu .valid-btn .price {
   font-size: 18px;
   font-weight: 800;
+  margin-right: 10px;
   font-family: "Roboto", sans-serif;
 }
+.btn-menu:focus .price, .btn-menu:active .price {
+  margin-right: 45px;
+}
+.btn-menu:focus .valid, .btn-menu:active .valid {
+  top: -44px;
+  width: 50px;
+  right: -38px;
+  display: block;
+  position: relative;
+  padding: 25px 5px 19px 5px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #99e2d0;
+}
 @media screen and (max-width: 767px) {
-  .btn-menu .valid-btn .price {
-    margin-right: -10px;
+  .btn-menu:focus .valid, .btn-menu:active .valid {
+    padding: 25px 5px 15px 5px;
   }
+}
+.btn-menu:focus .valid .fa-circle-check, .btn-menu:active .valid .fa-circle-check {
+  animation: rotateIcon 2s;
+}
+
+.btn-one,
+.btn-two,
+.btn-three,
+.btn-four,
+.btn-five,
+.btn-six,
+.btn-seven,
+.btn-eight,
+.btn-nine,
+.btn-ten {
+  animation-name: moveLeft;
+  animation-duration: 2s;
+}
+
+.btn-one {
+  animation-delay: 2s;
+}
+
+.btn-two {
+  animation-delay: 3s;
+}
+
+.btn-three {
+  animation-delay: 4s;
+}
+
+.btn-four {
+  animation-delay: 5s;
+}
+
+.btn-five {
+  animation-delay: 6s;
+}
+
+.btn-six {
+  animation-delay: 7s;
+}
+
+.btn-seven {
+  animation-delay: 8s;
+}
+
+.btn-eight {
+  animation-delay: 9s;
+}
+
+.btn-nine {
+  animation-delay: 10s;
+}
+
+.btn-ten {
+  animation-delay: 11s;
 }
 
 .menu-restau .h-title {
@@ -628,7 +792,7 @@ img {
   padding-bottom: 2px;
   margin: 20px 0 20px 0;
   text-transform: uppercase;
-  border-bottom: 2px solid #99E2D0;
+  border-bottom: 2px solid #99e2d0;
   font-family: "Roboto", sans-serif;
 }
 
@@ -639,10 +803,10 @@ img {
   border: none;
   padding: 15px;
   font-size: 15px;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 50px;
   font-family: "Roboto", sans-serif;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
 }
 
 h1,
@@ -671,7 +835,7 @@ h3 {
 }
 .favoris:hover .ic-heart, .favoris:focus .ic-heart, .favoris:active .ic-heart {
   display: block;
-  color: #9356DC;
+  color: #9356dc;
   transition: background 4s;
 }
 
@@ -683,28 +847,25 @@ h3 {
     transform: rotate(360deg);
   }
 }
-.fade-in {
-  animation: fadeIn ease 3s;
-}
-
-.fade-one {
-  animation-delay: 0.1s;
-}
-
-.fade-two {
-  animation-delay: 0.2s;
-}
-
-.fade-three {
-  animation-delay: 0.3s;
-}
-
-@keyframes fade-in {
+@keyframes moveLeft {
   0% {
     opacity: 0;
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translate(0px, 2%);
   }
   100% {
     opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @keyframes wave-loader {
