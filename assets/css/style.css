@@ -56,7 +56,13 @@ img {
   box-shadow: 0px 0px 16px #bebebe;
 }
 
+.shad-command {
+  border-radius: 50px;
+  box-shadow: 0px 0px 16px #bebebe;
+}
+
 .btn-menu {
+  opacity: 0;
   width: 100%;
   border: none;
   padding: 10px;
@@ -67,6 +73,9 @@ img {
   flex-direction: column;
   color: black !important;
   background-color: #ffffff;
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   font-family: "Roboto", sans-serif;
 }
 .btn-menu .tit-c {
@@ -132,58 +141,44 @@ img {
   animation: rotateIcon 2s;
 }
 
-.btn-one,
-.btn-two,
-.btn-three,
-.btn-four,
-.btn-five,
-.btn-six,
-.btn-seven,
-.btn-eight,
-.btn-nine,
-.btn-ten {
-  animation-name: moveLeft;
-  animation-duration: 2s;
+.btn-1 {
+  animation-delay: 1s;
 }
 
-.btn-one {
+.btn-2 {
   animation-delay: 2s;
 }
 
-.btn-two {
+.btn-3 {
   animation-delay: 3s;
 }
 
-.btn-three {
+.btn-4 {
   animation-delay: 4s;
 }
 
-.btn-four {
+.btn-5 {
   animation-delay: 5s;
 }
 
-.btn-five {
+.btn-6 {
   animation-delay: 6s;
 }
 
-.btn-six {
+.btn-7 {
   animation-delay: 7s;
 }
 
-.btn-seven {
+.btn-8 {
   animation-delay: 8s;
 }
 
-.btn-eight {
+.btn-9 {
   animation-delay: 9s;
 }
 
-.btn-nine {
+.btn-10 {
   animation-delay: 10s;
-}
-
-.btn-ten {
-  animation-delay: 11s;
 }
 
 .footer {
@@ -642,7 +637,13 @@ img {
   box-shadow: 0px 0px 16px #bebebe;
 }
 
+.shad-command {
+  border-radius: 50px;
+  box-shadow: 0px 0px 16px #bebebe;
+}
+
 .btn-menu {
+  opacity: 0;
   width: 100%;
   border: none;
   padding: 10px;
@@ -653,6 +654,9 @@ img {
   flex-direction: column;
   color: black !important;
   background-color: #ffffff;
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   font-family: "Roboto", sans-serif;
 }
 .btn-menu .tit-c {
@@ -718,58 +722,44 @@ img {
   animation: rotateIcon 2s;
 }
 
-.btn-one,
-.btn-two,
-.btn-three,
-.btn-four,
-.btn-five,
-.btn-six,
-.btn-seven,
-.btn-eight,
-.btn-nine,
-.btn-ten {
-  animation-name: moveLeft;
-  animation-duration: 2s;
+.btn-1 {
+  animation-delay: 1s;
 }
 
-.btn-one {
+.btn-2 {
   animation-delay: 2s;
 }
 
-.btn-two {
+.btn-3 {
   animation-delay: 3s;
 }
 
-.btn-three {
+.btn-4 {
   animation-delay: 4s;
 }
 
-.btn-four {
+.btn-5 {
   animation-delay: 5s;
 }
 
-.btn-five {
+.btn-6 {
   animation-delay: 6s;
 }
 
-.btn-six {
+.btn-7 {
   animation-delay: 7s;
 }
 
-.btn-seven {
+.btn-8 {
   animation-delay: 8s;
 }
 
-.btn-eight {
+.btn-9 {
   animation-delay: 9s;
 }
 
-.btn-nine {
+.btn-10 {
   animation-delay: 10s;
-}
-
-.btn-ten {
-  animation-delay: 11s;
 }
 
 .menu-restau .h-title {

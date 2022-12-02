@@ -32,10 +32,15 @@ img {
   border-radius: 20px;
   box-shadow: 0px 0px 16px #bebebe;
 }
+.shad-command {
+  border-radius: 50px;
+  box-shadow: 0px 0px 16px #bebebe;
+}
 .favoris {
   @extend %favoris;
 }
 .btn-menu {
+  opacity: 0;
   width: 100%;
   border: none;
   padding: 10px;
@@ -46,6 +51,9 @@ img {
   flex-direction: column;
   color: black !important;
   background-color: #ffffff;
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   font-family: $text;
   .tit-c {
     font-size: 18px;
@@ -109,46 +117,12 @@ img {
     }
   }
 }
-.btn-one, 
-.btn-two, 
-.btn-three,
-.btn-four,
-.btn-five,
-.btn-six,
-.btn-seven,
-.btn-eight,
-.btn-nine,
-.btn-ten {
-  animation-name: moveLeft;
-  animation-duration: 2s;
+
+// Boucle pour l'animation delay des boutons 
+
+@for $i from 1 through 10 {
+  .btn-#{$i} {
+    animation-delay: #{$i}s;
+  }
 }
-.btn-one {
-  animation-delay: 2s;
-}
-.btn-two {
-  animation-delay: 3s;
-}
-.btn-three {
-  animation-delay: 4s;
-}
-.btn-four {
-  animation-delay: 5s;
-}
-.btn-five {
-  animation-delay: 6s;
-}
-.btn-six {
-  animation-delay: 7s;
-}
-.btn-seven {
-  animation-delay: 8s;
-}
-.btn-eight {
-  animation-delay: 9s;
-}
-.btn-nine {
-  animation-delay: 10s;
-}
-.btn-ten {
-  animation-delay: 11s;
-}
+
