@@ -33,8 +33,7 @@ img {
   box-shadow: 0px 0px 16px #bebebe;
 }
 .shad-command {
-  border-radius: 50px;
-  box-shadow: 0px 0px 16px #bebebe;
+  box-shadow: 0px 0px 8px 2px #585353;
 }
 .favoris {
   @extend %favoris;
@@ -75,7 +74,7 @@ img {
     }
   }
   .valid-btn {
-    right: 30px;
+    right: 12px;
     margin-top: 11px;
     position: absolute;
     transition: all 0.3s ease-out;

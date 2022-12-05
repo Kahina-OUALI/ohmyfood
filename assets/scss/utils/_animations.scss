@@ -9,6 +9,42 @@
     transform: rotate(360deg);
   }
 }
+@-webkit-keyframes valid-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes valid-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes valid-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes valid-icon {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 // Progressive 
 
@@ -25,6 +61,76 @@
     transform: translate(0);
   }
 }
+@-webkit-keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translate(0px, 2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-moz-keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translate(0px, 2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-ms-keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translate(0px, 2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@-o-keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  80% {
+    transform: translate(0px, 2%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+// Apparition of the button valid 
+
+@keyframes appearBtnValid {
+  
+}
+@-webkit-keyframes appearBtnValid {
+
+}
+@-moz-keyframes appearBtnValid {
+
+}
+@-ms-keyframes appearBtnValid {
+
+}
+@-o-keyframes appearBtnValid {
+  
+}
 
 // Anime Icon 
 
@@ -36,10 +142,115 @@
     transform: rotate(360deg);
   }
 }
+@-webkit-keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-ms-keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 // Animation for the dots & loader
 
 @keyframes wave-loader {
+  0%,
+  100% {
+    transform: translateY(-30px);
+  }
+
+  25% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes wave-loader {
+  0%,
+  100% {
+    transform: translateY(-30px);
+  }
+
+  25% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(0);
+  }
+}
+@-moz-keyframes wave-loader {
+  0%,
+  100% {
+    transform: translateY(-30px);
+  }
+
+  25% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(0);
+  }
+}
+@-ms-keyframes wave-loader {
+
+  0%,
+  100% {
+    transform: translateY(-30px);
+  }
+
+  25% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  75% {
+    transform: translateY(0);
+  }
+}
+@-o-keyframes wave-loader {
 
   0%,
   100% {
@@ -78,8 +289,136 @@
     background: $dot-4;
   }
 }
+@-webkit-keyframes wave-color {
+
+  0%,
+  100% {
+    background: $dot-1;
+  }
+
+  25% {
+    background: $dot-2;
+  }
+
+  50% {
+    background: $dot-3;
+  }
+
+  75% {
+    background: $dot-4;
+  }
+}
+@-moz-keyframes wave-color {
+
+  0%,
+  100% {
+    background: $dot-1;
+  }
+
+  25% {
+    background: $dot-2;
+  }
+
+  50% {
+    background: $dot-3;
+  }
+
+  75% {
+    background: $dot-4;
+  }
+}
+@-ms-keyframes wave-color {
+
+  0%,
+  100% {
+    background: $dot-1;
+  }
+
+  25% {
+    background: $dot-2;
+  }
+
+  50% {
+    background: $dot-3;
+  }
+
+  75% {
+    background: $dot-4;
+  }
+}
+@-o-keyframes wave-color {
+
+  0%,
+  100% {
+    background: $dot-1;
+  }
+
+  25% {
+    background: $dot-2;
+  }
+
+  50% {
+    background: $dot-3;
+  }
+
+  75% {
+    background: $dot-4;
+  }
+}
 
 @keyframes fade-loader {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes fade-loader {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+}
+@-moz-keyframes fade-loader {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+}
+@-ms-keyframes fade-loader {
+
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -1;
+    visibility: hidden;
+  }
+}
+@-o-keyframes fade-loader {
 
   0%,
   50% {
