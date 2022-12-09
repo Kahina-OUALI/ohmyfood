@@ -100,12 +100,12 @@ img {
     .valid {
       top: -44px;
       width: 50px;
-      right: -38px;
       display: block;
       position: relative;
       padding: 25px 5px 19px 5px;
       border-top-right-radius: 20px;
       border-bottom-right-radius: 20px;
+      animation: appearBtnValid;
       background-color: $green;
       @media screen and (max-width: 767px) {
         padding: 25px 5px 15px 5px;

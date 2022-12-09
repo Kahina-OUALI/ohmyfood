@@ -117,7 +117,12 @@
 // Apparition of the button valid 
 
 @keyframes appearBtnValid {
-  
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-38px);
+  }
 }
 @-webkit-keyframes appearBtnValid {
 

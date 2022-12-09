@@ -123,12 +123,12 @@ img {
 .btn-menu:focus .valid, .btn-menu:active .valid {
   top: -44px;
   width: 50px;
-  right: -38px;
   display: block;
   position: relative;
   padding: 25px 5px 19px 5px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  animation: appearBtnValid;
   background-color: #99e2d0;
 }
 @media screen and (max-width: 767px) {
@@ -704,12 +704,12 @@ img {
 .btn-menu:focus .valid, .btn-menu:active .valid {
   top: -44px;
   width: 50px;
-  right: -38px;
   display: block;
   position: relative;
   padding: 25px 5px 19px 5px;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  animation: appearBtnValid;
   background-color: #99e2d0;
 }
 @media screen and (max-width: 767px) {
@@ -934,7 +934,14 @@ h3 {
     transform: translate(0);
   }
 }
-@keyframes appearBtnValid {}
+@keyframes appearBtnValid {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-38px);
+  }
+}
 @-webkit-keyframes appearBtnValid {}
 @-moz-keyframes appearBtnValid {}
 @-ms-keyframes appearBtnValid {}
