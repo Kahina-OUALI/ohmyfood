@@ -57,7 +57,7 @@ img {
 }
 
 .shad-command {
-  box-shadow: 0px 0px 8px 2px #585353;
+  box-shadow: 0px 0px 8px #a7a6a6;
 }
 
 .btn-menu {
@@ -638,7 +638,7 @@ img {
 }
 
 .shad-command {
-  box-shadow: 0px 0px 8px 2px #585353;
+  box-shadow: 0px 0px 8px #a7a6a6;
 }
 
 .btn-menu {
@@ -793,6 +793,7 @@ img {
   padding: 15px;
   font-size: 15px;
   color: #ffffff;
+  margin-top: 25px;
   border-radius: 50px;
   font-family: "Roboto", sans-serif;
   background: linear-gradient(#ff79da, #9356dc);
